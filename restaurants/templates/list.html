@@ -17,6 +17,11 @@
                 <a href="{% url 'restaurant-detail' restaurant.id %}" class="btn btn-outline-dark">View</a>
             </li>
           </ul>
+          {% if restaurant.logo %}
+            <img src=" {{ restaurant.logo.url }}" alt="">
+          {% endif %}
+          
+          
         </div>
     </div>
     {% endfor %}
